@@ -35,7 +35,7 @@ jobs:
         run: npx cap add android || true
 
       - name: Generate app icon & splash screen
-        run: npx @capacitor/assets generate --android
+        run: npx @capacitor/assets generate --android --asset-path resources
 
       - name: Sync web assets into the Android project
         run: npx cap sync android
